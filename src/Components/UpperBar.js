@@ -1,6 +1,6 @@
 import React from 'react'
 
-//this bar have not any functionality
+//this bar has not functionality
 
 export default function upperBar(){
 	return(
