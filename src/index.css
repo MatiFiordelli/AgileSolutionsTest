@@ -1,0 +1,92 @@
+*{
+	outline:none;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	sans-serif;
+	font-size:1rem;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display:grid;
+	justify-content: center;
+	align-items:center;
+}
+
+.main{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	margin:auto;
+	border: 1px solid #aaaaaa;
+	box-shadow: 2px 2px 4px #a5a5a5;
+	width:90vw;
+	height:95vh;
+}
+
+.upperBar{
+	background-color:#5c9fd7;
+	color:#ffffff;
+	height:7%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	flex-direction:row;
+}
+
+.upperBar>div:first-child{
+	margin-left: 1px;
+	flex-grow:0.5;
+}
+
+.upperBar>div:nth-child(2){
+	flex-grow:2;
+	display:flex;
+	align-items:center;
+}
+
+.upperBar .redCircle{
+	background-color:#ee0000;
+	border-radius:100%;
+	width:15px;
+	height:15px;
+	margin-right:5px;
+}
+
+.upperBar>div:last-child{
+	flex-grow:4;
+	text-align:center;
+}
+
+.filtersBar{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap:10px;
+	width:100%;
+	justify-content:center;
+	margin:10px auto;
+	text-align:center;
+	font-size:0.8rem;
+}
+
+.filtersBar label{
+	margin-right:5px;
+}
+
+.filtersBar select, .filtersBar option{
+	width:100px;
+}
+
+.theChart{
+	display:flex;
+	justify-content:center;
+	width:80%;
+	height:auto;
+}
+
+.theChart>canvas{
+	width:100% !important;
+	height:100% !important;
+}
