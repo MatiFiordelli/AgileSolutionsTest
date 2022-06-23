@@ -47,17 +47,17 @@ body {
 	align-items:center;
 }
 
+.upperBar>div:last-child{
+	flex-grow:4;
+	text-align:center;
+}
+
 .upperBar .redCircle{
 	background-color:#ee0000;
 	border-radius:100%;
 	width:15px;
 	height:15px;
 	margin-right:5px;
-}
-
-.upperBar>div:last-child{
-	flex-grow:4;
-	text-align:center;
 }
 
 .filtersBar{
