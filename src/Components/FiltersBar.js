@@ -8,7 +8,7 @@ export const capitalize = (str) => {
 	return firstLetter + restOfLetters
 }
 
-//Loading form Selects with the data from the database
+//Loading form Selects with data from the database
 export default function FiltersBar(){
 	const {stateSelect1, setStateSelect1} = useContext(SelectContext1)
 	const {stateSelect2, setStateSelect2} = useContext(SelectContext2)
